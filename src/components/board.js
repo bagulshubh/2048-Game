@@ -63,9 +63,8 @@ const Board = (props) => {
     let span = [];
     span[0]=2;
     span[1]=4;
-    span[2]=8;
-  
-    const ind = Math.floor(Math.random() * 3);
+    
+    const ind = Math.floor(Math.random() * 2);
 
     const no = span[ind];
 
@@ -209,7 +208,6 @@ const Board = (props) => {
       }
 
       setBoard(newBoard);
-      console.log(board);
       return newBoard
 
     
