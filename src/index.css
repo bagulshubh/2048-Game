@@ -107,7 +107,12 @@
     column-gap: 10rem;
 }
 
-
+@media (max-width:850px) {
+    .cell{
+        width: 3rem;
+        height: 3rem;
+    }
+}
 
 
 
