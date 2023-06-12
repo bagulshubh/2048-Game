@@ -1,13 +1,113 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.App{
+    margin: 0;
+    padding-top: 2rem;
+    background-color: #EDE8F6 ;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.heading{
+    font-size: 3rem;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.cell{
+    background-color: white;
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:1px solid black;
+    font-size: 2rem;
 }
+.c2{
+    background-color: #EEE4DA ;
+}
+.c4{
+    background-color: #EDE0C8;
+}
+.c8{
+    background-color: #F2B179 ;
+}
+.c16{
+    background-color: #F59563 ;
+}
+.c32{
+    background-color: #F67C5F ;
+}
+.c64{
+    background-color: #F65E3B  ;
+}
+.c128{
+    background-color: #EDCF72 ;
+}       
+.c256{
+    background-color: #EDCC61;
+}
+.c512{
+    background-color: #EDC850;
+}       
+.c1024{
+    background-color: #EDC53F;
+}
+.c2048{
+    background-color: #EDC22E ;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.board{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.score{
+    color: #333333;
+    background-color: #EDC22E;
+    transition-duration: 200;
+    /*transform: translateY(-80px);*/
+    font-size: 2rem;
+    padding: 0.5rem 0.7rem;
+    border-radius: 3px;
+    overflow-y: hidden;
+}
+.high{
+    color: #333333;
+    background-color: #EDC22E;
+    transition-duration: 200;
+    transform: translateY(-80px);
+    font-size: 2rem;
+    padding: 0.5rem 0.7rem;
+    border-radius: 3px;
+    overflow-y: hidden;
+}
+.buttons{
+    position: absolute;
+    top: 18%;
+    font-size: 2rem;
+    cursor: pointer;
+    display: flex;
+    column-gap: 10rem;
+}
+
+
+
+
+
